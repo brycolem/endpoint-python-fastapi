@@ -1,4 +1,4 @@
-FROM python:3.12.6-alpine
+FROM python:3.12.7-alpine
 WORKDIR /app
 
 COPY requirements.txt .
@@ -16,4 +16,4 @@ USER appuser
 
 EXPOSE 8001
 
-CMD ["gunicorn", "app.main:app", "--workers", "4", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8001"]
+CMD ["gunicorn", "app.main:app", "--workers", "8", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8001"]
