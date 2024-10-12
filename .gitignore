@@ -1,0 +1,15 @@
+# Ignore build outputs
+bin/
+obj/
+.vscode/
+*.user
+*.suo
+*.cache
+
+# Ignore other system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+*.log
+*.tmp
